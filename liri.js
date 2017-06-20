@@ -79,8 +79,14 @@ function twitter(){
 		throw error;
 	}
 
-	console.log(tweets);
-	// console.log(response);
+	// console.log(tweets);
+
+	for(var i=0; i< tweets.length; i++){
+		console.log("Data Created: " + tweets[i].created_at);
+		console.log("Tweet: " + tweets[i].text + "\n");
+		
+	}
+	
 	});		
 }
 
