@@ -17,7 +17,7 @@ This liri-node-app can take in one of the following commands:
 
    * This will show your last 20 tweets and when they were created at in your terminal/bash window.
 
-   [node liri.js my-tweets](/images/my-tweets.PNG)
+   ![node liri.js my-tweets](/images/my-tweets.PNG)
 
 2. `node liri.js spotify-this-song '<song name here>'`
 
