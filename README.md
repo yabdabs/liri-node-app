@@ -27,7 +27,7 @@ This liri-node-app can take in one of the following commands:
      * A preview link of the song from Spotify
      * The album that the song is from
 
-    ![node liri.js spotify-this-song Believer](/images/spotifty-this-song-Believer.PNG)
+    ![node liri.js spotify-this-song Believer](/images/spotify-this-song-Believer.PNG)
 
    * if no song is provided then your program will default to
      * "Get Up Offa That Thing" by James Brown
@@ -71,7 +71,6 @@ This liri-node-app can take in one of the following commands:
 * fs npm
 * request npm (to get data from Omdb API)
 
-#Examples
 
 
 
