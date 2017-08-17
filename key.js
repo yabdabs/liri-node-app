@@ -1,4 +1,6 @@
-console.log("This is working");
+console.log("\n-----------------------------------------------")
+console.log("Twitter and Spotify Keys are connected/working");
+console.log("-----------------------------------------------\n")
 
 exports.twitterKeys = {
   consumer_key: 'YVRSTdIsYVfxh5Sf1QASMR6UA',

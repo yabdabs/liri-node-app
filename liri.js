@@ -82,9 +82,9 @@ function twitter(){
 	// console.log(tweets);
 
 	for(var i=0; i< tweets.length; i++){
+		console.log("___________________________________________________________\n")
 		console.log("Data Created: " + tweets[i].created_at);
 		console.log("Tweet: " + tweets[i].text + "\n");
-		
 	}
 	
 	});		
@@ -95,7 +95,7 @@ function spotify(song){
 	// searchTerm();
 
 	if(song==undefined){
-		search= "The Sign";
+		song= "Get Up offa that thing";
 	}
 
 	clientSpotify.search({
@@ -111,15 +111,17 @@ function spotify(song){
 		  	// JSON.stringify turns a Javascript object into JSON text and stores that JSON text in a string.
 		  	// console.log(JSON.stringify(data, null, 2));
 
+		  	console.log("\n--------------------------------------------------------\n")
 		  	console.log("Artist Name: " + data.tracks.items[0].album.artists[0].name);
 		  	console.log("Song Name: " + data.tracks.items[0].name);
 		  	console.log("Album: " + data.tracks.items[0].album.name);
 		  	console.log("Song preview " + data.tracks.items[0].album.artists[0].href);
+		  	console.log("\n--------------------------------------------------------\n")
+
 	});
 }
 
 function omdb(){
-
 
 	if(song==undefined){
 		search= "Mr. Nobody";
@@ -131,15 +133,17 @@ function omdb(){
 		// If the request is successful
 		if (!error && response.statusCode === 200) {
 
+			console.log("\n_______________________________________________________________________\n")
 			// console.log(JSON.parse(body));
-			console.log("Title of the movie: " + JSON.parse(body).Title);
-			console.log("Year the movie came out: " + JSON.parse(body).Year);
-			console.log("IMDB Rating of the movie: " + JSON.parse(body).imdbRating);
-			console.log("Country where the movie was produced: " + JSON.parse(body).Country);
-			console.log("Language of the movie: " + JSON.parse(body).Language);
-			console.log("Plot of the movie: " + JSON.parse(body).Plot);
-			console.log("Actors in the movie: " + JSON.parse(body).Actors);
-			console.log("Rotten Tomatoes URL: " + JSON.parse(body).Website);
+			//using es6 syntax for practice!!
+			console.log(`Title of the movie: ${JSON.parse(body).Title} \n`);
+			console.log(`Year the movie came out: ${JSON.parse(body).Year} \n`);
+			console.log(`IMDB Rating of the movie: ${JSON.parse(body).imdbRating} \n`);
+			console.log(`Country where the movie was produced: ${JSON.parse(body).Country} \n`);
+			console.log(`Language of the movie: ${JSON.parse(body).Language} \n`);
+			console.log(`Plot of the movie: ${JSON.parse(body).Plot} \n`);
+			console.log(`Actors in the movie: ${JSON.parse(body).Actors} \n`);
+			console.log(`Rotten Tomatoes URL: ${JSON.parse(body).Website} \n`);
 		}
 	});
 
