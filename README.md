@@ -1,8 +1,6 @@
 # liri-node-app
 
 LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
-# Project Title
-
 
 ## Getting Started
 
@@ -19,7 +17,7 @@ This liri-node-app can take in one of the following commands:
 
    * This will show your last 20 tweets and when they were created at in your terminal/bash window.
 
-   ![node liri.js my-tweets](./images/my-tweets/PNG)
+   [node liri.js my-tweets](./images/my-tweets/PNG)
 
 2. `node liri.js spotify-this-song '<song name here>'`
 
